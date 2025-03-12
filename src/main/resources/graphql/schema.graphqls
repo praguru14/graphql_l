@@ -1,0 +1,67 @@
+type Query {
+    getAllDetails: [PersonDetails]
+    getPersonByPno(pno: String!): PersonDetails
+}
+
+type PersonDetails {
+    srNo: ID
+    pno: String
+    test: String
+    bloodGroupCode: String
+    aadharNumber: String
+    panNumber: String
+    voterId: String
+    religionCode: String
+    nationalityCode: String
+    maritalStatusCode: String
+    dateOfMarriage: String
+    officialMobileNumber: String
+    personalMobileNumber: String
+    unitCode: String
+    commandCode: String
+    govEmailId: String
+    nudEmailId: String
+    personalEmailId: String
+    dateOfJoining: String
+    rankCode: String
+    dateOfCommission: String
+    dateOfSeniority: String
+    cadreCode: String
+    branchCode: String
+    entryType: String
+    icardNumber: String
+    icardType: String
+    gxUnit: String
+    medicalCategory: String
+    medicalCategoryDate: String
+    dateOfRetirement: String
+    domicileState: String
+    designation: String
+    designationIdm: String
+    unitIdm: String
+    unitId: Int
+    commandId: Int
+    cadreId: Int
+    branchId: Int
+    rankId: Int
+    perMstWe: PersonMaster
+}
+
+type PersonMaster {
+    srNo: ID
+    pno: String
+    firstName: String
+    middleName: String
+    lastName: String
+    test: String
+    gender: String
+    dateOfBirth: String
+    placeOfBirth: String
+    userTypeCode: String
+    isActive: Int
+    fullName: String
+    dashboardAllowYn: Int
+    adminControlYn: Int
+    adminCrReportAllowYn: Int
+    superAdminControlYn: Int
+}
