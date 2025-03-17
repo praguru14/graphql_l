@@ -16,8 +16,4 @@ public interface PersonDetailsRepository extends JpaRepository<PersonDetailsEnti
     List<PersonDetailsEntity> findAll();
 
     PersonDetailsEntity findByPno(String pno);
-
-
-//    @Query("SELECT p FROM PersonDetailsEntity p JOIN FETCH p.perMstWe")
-//    List<PersonDetailsEntity> findAll();
 }

@@ -59,7 +59,6 @@ public class PersonMasterEntity {
     @Column(name = "super_admin_control_yn")
     private Integer superAdminControlYn;
 
-        // One-to-One relationship with PersonDetailsEntity
         @OneToOne(mappedBy = "perMstWe", fetch = FetchType.EAGER)
         private PersonDetailsEntity perDtlsWe;
 }

@@ -1,6 +1,5 @@
 package com.graphql.learn.controllers;
 
-//package com.graphql.learn.controllers;
 
 import com.graphql.learn.entities.PersonDetailsEntity;
 //import com.graphql.learn.services.PersonDetailsService;

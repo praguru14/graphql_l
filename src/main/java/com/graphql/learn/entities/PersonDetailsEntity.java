@@ -1,6 +1,5 @@
 package com.graphql.learn.entities;
 
-import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import jakarta.persistence.*;
 import lombok.Data;
@@ -133,10 +132,10 @@ public class PersonDetailsEntity {
     @Column(name = "rank_id")
     private Integer rankId;
 
-    // One-to-One relationship with PersonMasterEntity
+
 
     @OneToOne(fetch = FetchType.EAGER)
-//    @JsonIgnoreProperties("perDtlsWe")
+    @JsonIgnoreProperties("perDtlsWe")
     @JoinColumn(name = "pno", referencedColumnName = "pno",insertable=false, updatable=false)
     private PersonMasterEntity perMstWe;
 }
