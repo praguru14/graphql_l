@@ -16,6 +16,11 @@ public class PersonDetailsController {
     @Autowired
     private PersonDetailsRepository personDetailsRepository;
 
+    @GetMapping("/")
+    public String getPersonDetails() {
+        return "GRAPHIQL";
+    }
+
     @GetMapping("/api/person-details")
     public List<PersonDetailsEntity> getAllPersonDetails() {
         return personDetailsRepository.findAll();
